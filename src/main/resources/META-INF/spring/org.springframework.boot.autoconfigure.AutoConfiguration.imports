@@ -1,0 +1,4 @@
+org.example.synthetichumancorestarter.androidModule.configs.AuditConfig
+org.example.synthetichumancorestarter.androidModule.configs.CommandExecutorServiceConfig
+org.example.synthetichumancorestarter.androidModule.configs.AndroidControllerConfig
+org.example.synthetichumancorestarter.metrics.config.MeterBinderConfig
