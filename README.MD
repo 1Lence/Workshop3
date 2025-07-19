@@ -4,3 +4,4 @@
 
 В папке Scratches лежат реквесты для проверки работоспособности тасок
 
+![Console](https://github.com/1Lence/Workshop3/blob/service/grafana/Grafana.png)
