@@ -1,0 +1,40 @@
+### Correct version Critical
+POST http://localhost:8080/api/v1/android-command
+Content-Type: application/json
+
+{
+  "description": "This is a sample command description",
+  "priority": "CRITICAL",
+  "author": "John Doe",
+  "time": "2023-05-11T11:30:00Z"
+}
+### Correct version Common
+POST http://localhost:8080/api/v1/android-command
+Content-Type: application/json
+
+{
+  "description": "This is a sample command description",
+  "priority": "COMMON",
+  "author": "John Doe",
+  "time": "2023-05-11"
+}
+### Incorrect time
+POST http://localhost:8080/api/v1/android-command
+Content-Type: application/json
+
+{
+  "description": "This is a sample command description",
+  "priority": "COMMON",
+  "author": "John Doe",
+  "time": "2023-05-11Z11:30:00Z"
+}
+### Too much letters name
+POST http://localhost:8080/api/v1/android-command
+Content-Type: application/json
+
+{
+  "description": "This is a sample command description",
+  "priority": "COMMON",
+  "author": "qweqweqewqweqweqweqweqweqweqweqweqweqweqweqweqweqweweqweqewqweqweqweqweqweqweqweqweqweqweqweqweqweqwe",
+  "time": "2023-05-11Z11:30:00Z"
+}

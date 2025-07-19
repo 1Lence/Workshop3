@@ -1,0 +1,21 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: my-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.value.default.type: org.syntetic.synteticservice.kafka.LogData
+        spring.json.trusted.packages: "*"
+        spring.json.use.type.headers: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus,metrics
+    metrics:
+      tags:
+        application: android-metrics
